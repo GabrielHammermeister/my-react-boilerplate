@@ -1,8 +1,14 @@
+import Icon from 'components/Icon/Icon.index'
 import * as S from './Piece.styles'
+// import { ReactComponent as HorseSVG } from '%PUBLIC_URL%/portablejim-Chess-tile-Knight-3.svg'
+interface PieceProps {
+   icon?: SVGElement
+}
 
-const Piece = () => (
+const Piece = ({ icon }: PieceProps) => (
    <S.Container>
-      <h1>The component Piece was Created!</h1>
+      {/* <HorseSVG/> */}
+      <Icon source='portablejim-Chess-tile-Knight-3.svg' altMessage='Horse Chess Piece'/>
    </S.Container>
 )
 
